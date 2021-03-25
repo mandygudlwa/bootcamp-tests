@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.setup('bdd');
+        var assert = chai.assert;
+    </script>
+<!--greet function-->
+<script src="./functions/greet.js"></script>
+<script src="./test/greet.test.js"></script>
+<!--bellville function-->
+<script src="./functions/isFromBellville.js"></script>
+<script src="./test/isFromBellville.test.js"></script>
+
+<!--capetown function-->
+<script src="./functions/isFromCapeTown.js"></script>
+<script src="./test/isFromCapeTown.test.js"></script>
+
+<!--gauteng function-->
+<script src="./functions/isFromGauteng.js"></script>
+<script src="./test/isFromGauteng.test.js"></script>
+
+<!--limpopo function-->
+<script src="./functions/isFromLimpopo.js"></script>
+<script src="./test/isFromLimpopo.test.js"></script>
+    <script>
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+
+</html>
