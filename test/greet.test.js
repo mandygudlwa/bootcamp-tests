@@ -4,4 +4,9 @@ describe('greet' , function(){
 
     });
 
+    it('greets another person' , function(){
+        assert.equal(greet("Jon Doe"),'Hello, Jon Doe');
+
+    });
+
 });

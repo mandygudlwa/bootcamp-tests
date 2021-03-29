@@ -5,6 +5,6 @@ function findItemsOver(list,threshold){
         higher.push(list[i]) 
       }
     }
-    return higher
+    return higher 
       
   }

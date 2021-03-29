@@ -1,6 +1,6 @@
 function yearsAgo(thatYear){
-    var d = new Date();
-    var theYear = d.getFullYear();
+    var date= new Date();
+    var theYear = date.getFullYear();
     var result = theYear - thatYear
     
   
