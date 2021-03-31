@@ -1,5 +1,5 @@
 describe('mostProfitableDepartment' , function(){
-    it('The function should return The most profitable department.' , function(){
+    it('returns the department with the most sales(outdoor).' , function(){
         assert.deepEqual(mostProfitableDepartment([  {department: 'hardware', sales: 4500, day: 'Monday'},
         {department: 'outdoor', sales: 1500, day: 'Monday'},
         {department: 'carpentry', sales: 5500, day: 'Monday'},
@@ -18,7 +18,7 @@ describe('mostProfitableDepartment' , function(){
     });
 
 
-    it('The function should return The most profitable department.' , function(){
+    it('returns the department with the most sales(hardware).'  , function(){
         assert.deepEqual(mostProfitableDepartment([  {department: 'hardware', sales: 4500, day: 'Monday'},
         {department: 'outdoor', sales: 1500, day: 'Monday'},
         {department: 'carpentry', sales: 5500, day: 'Monday'},
